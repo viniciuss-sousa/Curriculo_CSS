@@ -1,0 +1,63 @@
+<fieldset>
+<form id="formulario">
+    <link rel="stylesheet" type="text/css" href="/css/styleform.css" media="screen" />
+
+    <label for="nome">Nome:</label>
+    <input type="text" id="nome" name="nome" required>
+  
+    <label for="sobrenome">Sobrenome:</label>
+    <input type="text" id="sobrenome" name="sobrenome" required>
+  
+    <label for="telefone">Telefone:</label>
+    <input type="tel" id="telefone" name="telefone" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" required>
+  
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+  
+    <label for="mensagem">Mensagem:</label>
+    <textarea id="mensagem" name="mensagem" rows="5"></textarea>
+  
+    <label for="linguagem">Língua:</label>
+    <select id="linguagem" name="linguagem">
+      <option value="ingles">Inglês</option>
+      <option value="espanhol">Espanhol</option>
+      <option value="frances">Francês</option>
+      <option value="portugues">Português</option>
+    </select>
+  
+    <label for="prototipo">Protótipo:</label>
+    <input type="file" id="prototipo" name="prototipo" accept=".pdf, .doc, .docx, .jpeg, .png" required>
+  
+    <label for="preferencia-linguagem">Linguagem preferida:</label>
+    <select id="preferencia-linguagem" name="preferencia-linguagem" multiple>
+      <option value="javascript">JavaScript</option>
+      <option value="python">Python</option>
+      <option value="java">Java</option>
+      <option value="csharp">C#</option>
+    </select>
+  
+    <label>Tipo de banco de dados recomendado:</label>
+    <input type="radio" id="mysql" name="banco-de-dados" value="mysql">
+    <label for="mysql">MySQL</label>
+    <input type="radio" id="postgresql" name="banco-de-dados" value="postgresql">
+    <label for="postgresql">PostgreSQL</label>
+    <input type="radio" id="mongodb" name="banco-de-dados" value="mongodb">
+    <label for="mongodb">MongoDB</label>
+  
+    <label for="preferencia-turno">Turno de preferência:</label>
+    <select id="preferencia-turno" name="preferencia-turno">
+      <option value="manha">Manhã</option>
+      <option value="tarde">Tarde</option>
+      <option value="noite">Noite</option>
+    </select>
+  
+    <label for="horario-sugerido">Horário sugerido:</label>
+    <input type="time" id="horario-sugerido" name="horario-sugerido">
+  
+    <label for="previsao-entrega">Previsão de entrega desejada:</label>
+    <input type="date" id="previsao-entrega" name="previsao-entrega">
+  
+    <button type="button" id="limpar">Limpar</button>
+    <button type="submit" id="enviar">Enviar</button>
+    <script type="text/javascript" src="formulario.js"></script>
+</fieldset>

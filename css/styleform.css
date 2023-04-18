@@ -1,0 +1,76 @@
+/* Estilos para o formulário */
+#formulario label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  #formulario input,
+  #formulario select,
+  #formulario textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  #formulario input[type="file"] {
+    margin-bottom: 10px;
+  }
+  
+  #formulario select[multiple] {
+    height: 100px;
+  }
+  
+  #formulario button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #fff;
+    margin-right: 10px;
+  }
+  
+  #formulario button:hover {
+    background-color: #3e8e41;
+  }
+  
+  #formulario button#limpar {
+    background-color: #f44336;
+  }
+  
+  #formulario button#limpar:hover {
+    background-color: #e53935;
+  }
+  
+  /* Estilos para o campo obrigatório */
+  #formulario input:required:invalid,
+  #formulario select:required:invalid,
+  #formulario textarea:required:invalid {
+    border-color: #f44336;
+  }
+  
+  #formulario input:required:invalid:focus,
+  #formulario select:required:invalid:focus,
+  #formulario textarea:required:invalid:focus {
+    border-color: #f44336;
+    box-shadow: 0 0 10px rgba(244, 67, 54, 0.6);
+  }
+  
+  /* Estilos para o campo preenchido corretamente */
+  #formulario input:valid,
+  #formulario select:valid,
+  #formulario textarea:valid {
+    border-color: #4CAF50;
+  }
+  
+  #formulario input:valid:focus,
+  #formulario select:valid:focus,
+  #formulario textarea:valid:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 10px rgba(76, 175, 80, 0.6);
+  }
+  
